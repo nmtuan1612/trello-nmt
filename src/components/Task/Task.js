@@ -1,4 +1,4 @@
-import './Task.scss'
+import "./Task.scss";
 
 const Task = () => {
   return (

@@ -1,9 +1,9 @@
-@import './setting.scss';
+@import "./setting.scss";
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
 }
 
@@ -13,5 +13,4 @@ body {
   grid-template-rows: 40px 50px 1fr;
   line-height: 1.3em;
   background-color: $board-bg-color;
-
 }
