@@ -15,7 +15,7 @@ const DropdownList = ({ title, isOpenDropList, setIsOpenDropList }) => {
       }
       else if (title === "Boards" || title === "Recent Boards") setBoardsList(boardsListFromDB)
     }
-  }, [isBoardsListChanged, title]);
+  }, [isBoardsListChanged, title, boardsListFromDB]);
 
   const handleClose = () => {
     setIsOpenDropList(!isOpenDropList);
