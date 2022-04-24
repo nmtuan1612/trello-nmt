@@ -1,9 +1,15 @@
 @import "_setting.scss";
 
+$column-header-height: 40px;
+$colum-border-radius: 5px;
+
+$list-bg-color: #ebecf0;
+
 .board-content {
   display: flex;
-  overflow-x: auto;
-  margin: 0 $gap $gap;
+  overflow-x: scroll;
+  // width: calc(100% - #{$gap});
+  margin: $gap;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
     height: 10px;
@@ -11,5 +17,32 @@
   &::-webkit-scrollbar-thumb {
     background-color: $common-element-bg-color;
     border-radius: 8px;
+  }
+  .add-column-btn {
+    flex: 0 0 auto;
+    height: $column-header-height;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-left: $gap;
+    padding-left: 16px;
+    color: $fade-text-color;
+    background-color: $list-bg-color;
+    border-radius: $colum-border-radius;
+    &:hover {
+      cursor: pointer;
+      background-color: #ccc;
+    }
+    i {
+      margin-right: 8px;
+    }
+  }
+  .add-column-form {
+    width: 300px;
+    flex: 0 0 auto;
+    background-color: $list-bg-color;
+    border-radius: $colum-border-radius;
+    margin: 0 $gap;
+    height: 90px;
   }
 }

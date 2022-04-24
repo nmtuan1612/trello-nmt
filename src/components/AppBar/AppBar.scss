@@ -1,11 +1,76 @@
 @import "_setting.scss";
 
-$appbar-bg-color: #0067a3;
+// $appbar-bg-color: #0067a3;
+$appbar-bg-color: #e4ebf2;
+
+$icon-down-size: 12px;
+$navbar-element-height: 70%;
+
+$navbar-element-border-radius: 3px;
 
 .navbar-app {
-  padding-left: $gap;
+  padding: 0 $gap;
+  background-color: $appbar-bg-color;
   display: flex;
   align-items: center;
-  background-color: $appbar-bg-color;
-  font-size: 1.5rem;
+  justify-content: space-between;
+  font-size: 15px;
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .app-logo {
+      height: $navbar-element-height;
+      padding: 0 6px;
+      border-radius: $navbar-element-border-radius;
+      &:hover {
+        cursor: pointer;
+        background-color: $hover-bg-color;
+      }
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    .navbar-search {
+      border-radius: $navbar-element-border-radius;
+      padding: 4px 8px;
+      background-color: darken($appbar-bg-color, 10);
+      &:hover {
+        background-color: darken($appbar-bg-color, 15);
+      }
+      i {
+        margin-right: 8px;
+        color: $fade-text-color;
+      }
+      input.navbar-search-input {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        &:focus {
+          background-color: #fff;
+        }
+      }
+    }
+    .navbar-notify {
+      font-size: 16px;
+      margin: 0 16px;
+      line-height: 100%;
+      cursor: pointer;
+      &:hover {
+        color: rgb(120, 119, 119);
+      }
+    }
+    .navbar-user {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: url('../../imgs/me.jpeg') no-repeat center;
+      background-size: cover;
+      cursor: pointer;
+    }
+  }
 }
