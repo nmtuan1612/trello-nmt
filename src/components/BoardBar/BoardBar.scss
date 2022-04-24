@@ -10,8 +10,9 @@ $navbar-element-border-radius: 3px;
   display: flex;
   align-items: center;
   // background-color: $board-bg-color;
-  background-color: transparent;
   font-size: 1.1rem;
+  background-color: transparent;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
   .board-name {
     font-size: 20px;
     cursor: pointer;

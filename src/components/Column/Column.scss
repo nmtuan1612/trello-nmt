@@ -46,6 +46,7 @@ $list-bg-color: #ebecf0;
   ul.card-list {
     list-style: none;
     margin: 0;
+    padding-bottom: 10px;
     max-height: calc(
       100% - #{$column-header-height} - 2*#{$column-footer-height}
     );

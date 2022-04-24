@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import "./App.scss";
 import AppBar from "components/AppBar/AppBar";
 import BoardContent from "components/BoardContent/BoardContent";
-import { BoardContext } from 'Contexts/BoardContext';
+import { BoardContext } from './Contexts/BoardContext';
 
 function App() {
   const [bgUrl, setBgUrl] = useState('')

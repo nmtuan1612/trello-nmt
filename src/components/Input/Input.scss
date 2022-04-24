@@ -5,7 +5,7 @@ $column-header-height: 40px;
 $list-bg-color: #ebecf0;
 
 .edit-card {
-  padding: 6px $gap $gap;
+  padding: 12px $gap $gap;
   border-bottom-left-radius: $colum-border-radius;
   border-bottom-right-radius: $colum-border-radius;
   input {
@@ -23,6 +23,7 @@ $list-bg-color: #ebecf0;
     margin-top: 10px;
     display: flex;
     align-items: center;
+    padding-bottom: 12px;
     button {
       color: white;
       background-color: $regular-color;
