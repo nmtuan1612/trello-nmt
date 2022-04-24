@@ -20,7 +20,7 @@ const BoardContent = ({ setBgUrl, currentBoard}) => {
       // // sort columns according columnOrder then setColumns
       // setColumns(mapOrder(boardFromDB.columns, boardFromDB.columnOrder, 'id'))
     }
-  }, [boardFromDB])
+  }, [boardFromDB, setBgUrl])
 
   useEffect(() => {
     if(isAddColumn) {
