@@ -2,13 +2,44 @@
 
 $card-border-radius: 4px;
 
+$list-bg-color: #ebecf0;
+
 li.card-item {
   background-color: white;
   padding: $gap;
+  font-size: 14px;
   border-radius: $card-border-radius;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  p {
+    margin: 0;
+  }
+  .card-edit {
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    right: $gap;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $card-border-radius;
+    display: none;
+    background-color: $list-bg-color;
+    &:hover {
+      background-color: darken($list-bg-color, 8);
+    }
+  }
   &:not(:last-child) {
     margin-bottom: $gap;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    .card-edit {
+      display: flex;
+    }
   }
   img.card-cover {
     display: block;

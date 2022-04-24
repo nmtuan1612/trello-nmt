@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap";
 @import "./setting.scss";
 
 body {
@@ -10,7 +11,9 @@ body {
 .trello-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px 50px 1fr;
+  grid-template-rows: 44px 40px 1fr;
   line-height: 1.3em;
-  background-color: $board-bg-color;
+  // background-color: $board-bg-color;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,7 +1,7 @@
 @import "_setting.scss";
 
-$column-header-height: 36px;
-$column-footer-height: 36px;
+$column-header-height: 40px;
+$column-footer-height: 40px;
 $colum-border-radius: 5px;
 
 $list-bg-color: #ebecf0;
@@ -10,6 +10,7 @@ $list-bg-color: #ebecf0;
   flex: 0 0 auto;
   width: 300px;
   height: calc(100% - #{$gap});
+  // box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   &:not(:first-child) {
     margin-left: $gap;
   }
@@ -21,24 +22,32 @@ $list-bg-color: #ebecf0;
   header {
     padding-left: 16px;
     height: $column-header-height;
+    width: 100%;
     line-height: $column-header-height;
     font-size: 16px;
     font-weight: bold;
     border-top-left-radius: $colum-border-radius;
     border-top-right-radius: $colum-border-radius;
-  }
-  footer {
-    padding-left: 16px;
-    height: $column-footer-height;
-    line-height: $column-footer-height;
-    border-bottom-left-radius: $colum-border-radius;
-    border-bottom-right-radius: $colum-border-radius;
+    position: relative;
+    cursor: pointer;
+    i {
+      font-size: 12px;
+      position: absolute;
+      top: 35%;
+      right: $gap;
+      display: none;
+    }
+    &:hover {
+      i {
+        display: block;
+      }
+    }
   }
   ul.card-list {
     list-style: none;
     margin: 0;
     max-height: calc(
-      100% - #{$column-header-height} - #{$column-footer-height}
+      100% - #{$column-header-height} - 2*#{$column-footer-height}
     );
     overflow-y: auto;
     &::-webkit-scrollbar {
@@ -50,6 +59,28 @@ $list-bg-color: #ebecf0;
     &::-webkit-scrollbar-thumb {
       background-color: darken($list-bg-color, 15);
       border-right: 5px solid $list-bg-color;
+    }
+  }
+  footer {
+    padding: 6px $gap;
+    height: $column-footer-height;
+    line-height: $column-footer-height;
+    border-bottom-left-radius: $colum-border-radius;
+    border-bottom-right-radius: $colum-border-radius;
+    .add-card-btn {
+      height: 84%;
+      display: flex;
+      align-items: center;
+      color: $fade-text-color;
+      padding: 8px 8px;
+      border-radius: $colum-border-radius;
+      &:hover {
+        cursor: pointer;
+        background-color: #ccc;
+      }
+      i {
+        margin-right: 8px;
+      }
     }
   }
 }
