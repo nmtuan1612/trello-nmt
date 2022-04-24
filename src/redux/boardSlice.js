@@ -53,7 +53,7 @@ export const boardSlice = createSlice({
             {
               id: "board-2",
               name: "Ecommerce Website",
-              background: 'https://cutewallpaper.org/21/trello-backgrounds/Abby-and-Everest-Application-ROBLOX.jpg',
+              background: 'https://cutewallpaper.org/21/trello-backgrounds/Background-Scapes-by-Octopus-X-in-Environments-UE4-Marketplace.png',
               stared: false,
               description: 'Ecommerce website for customers',
               columnOrder: ["column-1", "column-2", "column-3"],
@@ -134,8 +134,8 @@ export const boardSlice = createSlice({
             },
         ],
         backgrounds: [
-            'https://cutewallpaper.org/21/trello-backgrounds/Abby-and-Everest-Application-ROBLOX.jpg',
             'https://cutewallpaper.org/21/trello-backgrounds/Trello-Pictures-Download-Free-Images-on-Unsplash.jpg',
+            'https://cutewallpaper.org/21/trello-backgrounds/Abby-and-Everest-Application-ROBLOX.jpg',
             'https://cutewallpaper.org/21/trello-backgrounds/Windows-Backgrounds-Mountain-Stock-Photos-Backgroundnature-.jpg',
             'https://cutewallpaper.org/21/trello-backgrounds/Background-Scapes-by-Octopus-X-in-Environments-UE4-Marketplace.png',
             'https://cutewallpaper.org/21/trello-backgrounds/Introducing-Photo-Backgrounds-By-Unsplash-For-Trello.webp',
